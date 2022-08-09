@@ -13,11 +13,9 @@ const Search = styled("div")(({ theme }) => ({
     backgroundColor: "white",
     padding: "0 10px",
     borderRadius: theme.shape.borderRadius,
-    width: "40%",
-    height: "100%",
+    width: "45%",
     [theme.breakpoints.up('sm')]: {
         width: "30%",
-        height: "2em",
     }
 }))
 
@@ -51,7 +49,9 @@ const Navbar = () => {
                     PAINZOR
                 </Typography>
                 <PetsIcon sx={{ display: { xs: "block", sm: "none" } }} />
-                <Search><InputBase fullWidth={true} placeholder='Search...' /></Search>
+                <Search>
+                    <InputBase fullWidth={true} placeholder='Search...' />
+                </Search>
                 <Icons>
                     <Badge badgeContent={4} color="error">
                         <MailIcon />
@@ -59,15 +59,15 @@ const Navbar = () => {
                     <Badge color="secondary" badgeContent={100}>
                         <MailIcon />
                     </Badge>
-                    <Avatar 
-                        sx={{ width: 35, height: 35 }} alt="Cindy Baker"
-                        src="/static/images/avatar/3.jpg" />
-                </Icons>
-                <UserBoxMobile> 
                     <Avatar
                         sx={{ width: 35, height: 35 }} alt="Cindy Baker"
                         src="/static/images/avatar/3.jpg" />
-                        
+                </Icons>
+                <UserBoxMobile>
+                    <Avatar
+                        sx={{ width: 35, height: 35 }} alt="Cindy Baker"
+                        src="/static/images/avatar/3.jpg" />
+
                     <Typography variant="span">John</Typography>
                 </UserBoxMobile>
             </StyledToolbar>
