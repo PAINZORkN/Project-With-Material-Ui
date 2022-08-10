@@ -26,7 +26,7 @@ const Sidebar = () => {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Homepage" />
+            <ListItemText primary="Error: PAINZOR NOT FOUND" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
