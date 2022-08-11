@@ -8,7 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import IconButton from '@mui/material/IconButton';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
 import Favorite from "@mui/icons-material/Favorite";
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import React from 'react'
@@ -16,7 +16,7 @@ import { Checkbox } from '@mui/material';
 
 const Post = (props) => {
   return (
-    <Card>
+    <Card sx={{margin: 5}}>
       <CardHeader
         avatar={
           <Avatar sx={ props.color} aria-label="recipe">
