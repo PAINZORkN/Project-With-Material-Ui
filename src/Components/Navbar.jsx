@@ -50,8 +50,8 @@ const UserBoxMobile = styled(Box)(({ theme }) => ({
 }));
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
-  
+  const [open, setOpen] = useState(false);
+
   return (
     <AppBar position="sticky">
       <StyledToolbar>
@@ -79,17 +79,17 @@ const Navbar = () => {
             <MailIcon />
           </Badge>
           <Avatar
-          sx={{
-            width: 35,
-            height: 35,
-          }}
-          alt="Cindy Baker"
-          src="/static/images/avatar/3.jpg"
-          onClick={(e)=>setOpen(true)}
-        />
+            sx={{
+              width: 35,
+              height: 35,
+            }}
+            alt="Cindy Baker"
+            src="/static/images/avatar/3.jpg"
+            onClick={(e) => setOpen(true)}
+          />
           {/* <BasicMenu /> */}
         </Icons>
-        <UserBoxMobile  onClick={(e)=>setOpen(true)}>
+        <UserBoxMobile onClick={(e) => setOpen(true)}>
           <Avatar
             sx={{
               width: 35,
@@ -97,30 +97,29 @@ const Navbar = () => {
             }}
             alt="Cindy Baker"
             src="/static/images/avatar/3.jpg"
-            
           />
           <Typography variant="span">John</Typography>
         </UserBoxMobile>
       </StyledToolbar>
 
       <Menu
-                id="demo-positioned-menu"
-                aria-labelledby="demo-positioned-button"
-                open={open}
-                onClose={(e)=>setOpen(false)}
-                anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                }}
-                transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                }}
-            >
-                <MenuItem>Profile</MenuItem>
-                <MenuItem>My account</MenuItem>
-                <MenuItem>Logout</MenuItem>
-            </Menu>
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        open={open}
+        onClose={(e) => setOpen(false)}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+      >
+        <MenuItem>Profile</MenuItem>
+        <MenuItem>My account</MenuItem>
+        <MenuItem>Logout</MenuItem>
+      </Menu>
     </AppBar>
   );
 };
