@@ -17,7 +17,7 @@ import { Box } from '@mui/system';
 
 const Post = (props) => {
   return (
-    <Box flex={5}>
+    <Box flex={5} sx={{marginLeft: {xs: '-10%' , sm:'0'}}  }>
     <Card  sx={{margin: 5, }}>
       <CardHeader
         avatar={
