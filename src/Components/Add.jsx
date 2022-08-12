@@ -36,19 +36,18 @@ const UserBox = styled(Box)({
 });
 
 const TooltipDisplay = styled(Box)(({ theme }) => ({
-    display: "flex",
-    justifyContent:'center',
-    width:'100%',
+  display: "flex",
+  justifyContent: "center",
+  width: "100%",
+  position: "fixed",
+  bottom: "20px",
+  [theme.breakpoints.up("sm")]: {
     position: "fixed",
     bottom: "20px",
-    [theme.breakpoints.up("sm")]: {
-        position: "fixed",
-        bottom: "20px",
-        justifyContent:'start',
-        paddingLeft: '10px'
-    },
-  }
-))
+    justifyContent: "start",
+    paddingLeft: "10px",
+  },
+}));
 
 const Add = () => {
   const [open, setOpen] = useState(false);

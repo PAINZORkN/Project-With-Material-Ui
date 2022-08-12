@@ -34,9 +34,10 @@ const Post = (props) => {
       <cardMediaMobile>
        <CardMedia
         component="img"
-        height="20%"
+        sx={{maxWidth:'800', maxHeight:'1200'}}
         image={props.img}
-        alt=""/>
+        alt=""
+        />
       </cardMediaMobile>
       <CardContent>
         <Typography variant="body2" color="text.secondary">

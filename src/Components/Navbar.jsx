@@ -35,6 +35,7 @@ const Icons = styled(Box)(({ theme }) => ({
   display: "none",
   alignItems: "center",
   gap: "20px",
+  cursor: 'pointer',
   [theme.breakpoints.up("sm")]: {
     display: "flex",
   },
@@ -59,6 +60,7 @@ const Navbar = () => {
           variant="h6"
           sx={{
             display: { xs: "none", sm: "block" },
+            cursor: 'pointer',
           }}
         >
           META
