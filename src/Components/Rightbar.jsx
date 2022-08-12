@@ -9,7 +9,7 @@ const Rightbar = () => {
     >
       <Box position="fixed" width={300}>
         <Typography variant="h6" fontWeight={100}>Online Friends</Typography>
-        <AvatarGroup max={8}>
+        <AvatarGroup max={8} sx={{cursor: 'pointer'}}>
           <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
           <Avatar alt="Travis Howard" src="https://material-ui.com//static/images/avatar/2.jpg" />
           <Avatar alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" />
@@ -21,8 +21,8 @@ const Rightbar = () => {
           <Avatar alt="Trevor Henderson" src="https://material-ui.com/static/images/avatar/10.jpg" />
         </AvatarGroup>
         <Typography variant="h6" fontWeight={100} mt={2} mb={2}>Latest Photos</Typography>
-        <ImageList cols={3} rowHeight={100} gap={5}>
-          <ImageListItem>
+        <ImageList cols={3} rowHeight={100} gap={5} sx={{cursor:'pointer'}}>
+          <ImageListItem >
             <img
               src="https://material-ui.com/static/images/image-list/breakfast.jpg"
               alt=""
@@ -62,10 +62,10 @@ const Rightbar = () => {
         <Typography variant="h6" fontWeight={100} mt={2} mb={0}>Latest Conversations</Typography>
         <List sx={{ width: '100%', maxWidth: 300, bgcolor: 'background.paper', marginLeft: "-20px" }}>
           <ListItem alignItems="flex-start" >
-            <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/3.jpg" />
+            <ListItemAvatar >
+              <Avatar sx={{cursor:'pointer'}} alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
             </ListItemAvatar>
-            <ListItemText
+            <ListItemText sx={{cursor:'pointer'}}
               primary="Brunch this weekend?"
               secondary={
                 <React.Fragment>
@@ -85,9 +85,9 @@ const Rightbar = () => {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/2.jpg" />
+              <Avatar sx={{cursor:'pointer'}} alt="Travis Howard" src="https://material-ui.com/static/images/avatar/2.jpg" />
             </ListItemAvatar>
-            <ListItemText
+            <ListItemText sx={{cursor:'pointer'}}
               primary="Summer BBQ"
               secondary={
                 <React.Fragment>
@@ -107,9 +107,9 @@ const Rightbar = () => {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+              <Avatar sx={{cursor:'pointer'}} alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" />
             </ListItemAvatar>
-            <ListItemText
+            <ListItemText sx={{cursor:'pointer'}}
               primary="Oui Oui"
               secondary={
                 <React.Fragment>
