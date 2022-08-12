@@ -13,10 +13,12 @@ import Favorite from "@mui/icons-material/Favorite";
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import React from 'react'
 import { Checkbox } from '@mui/material';
+import { Box } from '@mui/system';
 
 const Post = (props) => {
   return (
-    <Card sx={{margin: 5}}>
+    <Box flex={5}>
+    <Card  sx={{margin: 5, }}>
       <CardHeader
         avatar={
           <Avatar sx={ props.color} aria-label="recipe">
@@ -31,14 +33,14 @@ const Post = (props) => {
         title={props.title}
         subheader={props.date}
       />
-      <cardMediaMobile>
+      
        <CardMedia
         component="img"
         sx={{maxWidth:'800', maxHeight:'1200'}}
         image={props.img}
         alt=""
         />
-      </cardMediaMobile>
+     
       <CardContent>
         <Typography variant="body2" color="text.secondary">
          {props.desc}
@@ -53,6 +55,7 @@ const Post = (props) => {
         </IconButton>
       </CardActions>
     </Card>
+    </Box>
   )
 }
 

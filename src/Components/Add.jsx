@@ -54,7 +54,7 @@ const Add = () => {
   return (
     <>
       <TooltipDisplay>
-        <Tooltip onClick={(e) => setOpen(true)} title="Delete">
+        <Tooltip onClick={(e) => setOpen(true)} title="Add Post">
           <Fab color="primary" aria-label="add">
             <AddIcon />
           </Fab>
